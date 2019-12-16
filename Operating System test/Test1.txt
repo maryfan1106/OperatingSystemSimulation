@@ -1,0 +1,193 @@
+ ./a.out 
+Memeory Size ?
+100 
+Disk Size ?
+3
+
+
+S r
+
+CPU and Ready-Queue are empty
+
+S m
+
+Memory:
+-1000	0	-	99	Capacity: 100
+
+
+A 5 10
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	1*		5
+
+S m
+
+Memory:
+1	0	-	9	Capacity: 10
+-1000	10	-	99	Capacity: 90
+
+
+A 8 15
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	2*		8
+	1		5
+
+S m
+
+Memory:
+1	0	-	9	Capacity: 10
+2	10	-	24	Capacity: 15
+-1000	25	-	99	Capacity: 75
+
+
+A 3 65
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	2*		8
+	1		5
+	3		3
+
+S m
+
+Memory:
+1	0	-	9	Capacity: 10
+2	10	-	24	Capacity: 15
+3	25	-	89	Capacity: 65
+-1000	90	-	99	Capacity: 10
+
+
+d 1 asd
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	1*		5
+	3		3
+
+S i
+
+The Processes using Disk 1:
+	2*	asd
+
+d 1 qwer
+
+S i
+
+The Processes using Disk 1:
+	2*	asd
+	1	qwer
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	3*		3
+
+S i
+
+The Processes using Disk 1:
+	2*	asd
+	1	qwer
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	3*		3
+
+D 1
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	2*		8
+	3		3
+
+S i
+
+The Processes using Disk 1:
+	1*	qwer
+
+D 1
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	2*		8
+	1		5
+	3		3
+
+S i
+
+all disk are currently empty
+
+S m
+
+Memory:
+1	0	-	9	Capacity: 10
+2	10	-	24	Capacity: 15
+3	25	-	89	Capacity: 65
+-1000	90	-	99	Capacity: 10
+
+
+S m
+
+Memory:
+1	0	-	9	Capacity: 10
+2	10	-	24	Capacity: 15
+3	25	-	89	Capacity: 65
+-1000	90	-	99	Capacity: 10
+
+
+exit
+
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	1*		5
+	3		3
+
+S m
+
+Memory:
+1	0	-	9	Capacity: 10
+-1000	10	-	24	Capacity: 15
+3	25	-	89	Capacity: 65
+-1000	90	-	99	Capacity: 10
+
+
+A 1 8
+
+S m
+
+Memory:
+1	0	-	9	Capacity: 10
+4	10	-	17	Capacity: 8
+-1000	18	-	24	Capacity: 7
+3	25	-	89	Capacity: 65
+-1000	90	-	99	Capacity: 10
+
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	1*		5
+	3		3
+	4		1
+

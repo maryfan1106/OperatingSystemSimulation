@@ -1,0 +1,133 @@
+How much RAM memory is there on the simulated computer?
+100 
+How many hard disks does the simulated computer have?
+4
+
+A 5 10
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	1*		5
+
+fork
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	1*		5
+	2		5
+
+fork
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	1*		5
+	2		5
+	3		5
+
+d 1 asd
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	2*		5
+	3		5
+
+fork
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	2*		5
+	3		5
+	4		5
+
+d 1 asd
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	3*		5
+	4		5
+
+fork
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	3*		5
+	4		5
+	5		5
+
+d 1 asd
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	4*		5
+	5		5
+
+fork
+
+fork
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	4*		5
+	5		5
+	6		5
+	7		5
+
+d 1 asd
+
+d 1 asd
+
+d 1 asdf
+
+d 1 asddf
+
+S r
+
+CPU and Ready-Queue are empty
+
+S i
+
+The Processes using Disk 1 Disk size: 7:
+	1*	asd
+	2	asd
+	3	asd
+	4	asd
+	5	asd
+	6	asdf
+	7	asddf
+
+D 1
+
+exit
+
+S i
+
+all disk are currently empty
+
+S r
+
+CPU and Ready-Queue are empty
+
+S m
+
+Memory:
+-1000	0	-	99	Capacity: 100
+
+

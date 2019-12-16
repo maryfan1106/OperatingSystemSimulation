@@ -1,0 +1,21 @@
+A 1 10
+A 1 10
+fork
+S r
+d 1 asd
+d 1 asd
+S r
+fork
+d 0 rty
+S r
+d 0 fgh
+D 1
+S i
+S r
+fork
+fork
+S r
+exit
+S r
+A 5 10
+fork

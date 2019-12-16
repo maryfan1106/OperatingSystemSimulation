@@ -1,0 +1,24 @@
+ ./a.out 
+Memory?
+1000 
+Disk?
+5
+
+A 5 10
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	1*		5
+
+d 1 asd
+
+S r
+
+CPU and Ready-Queue are empty
+
+
+
+
+

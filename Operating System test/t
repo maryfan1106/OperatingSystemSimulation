@@ -1,0 +1,9 @@
+    // //Rmove from disk
+    for(auto curr_disk : disk_){
+        auto to_remove = std::find_if(curr_disk.begin(), curr_disk.end(), [&](const auto& val){ return val.second == PID; } );
+        if(to_remove != curr_disk.end()){
+            curr_disk.erase(to_remove);
+            break;
+        }
+    }
+gi

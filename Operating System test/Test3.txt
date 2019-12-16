@@ -1,0 +1,147 @@
+How much RAM memory is there on the simulated computer?
+100
+How many hard disks does the simulated computer have?
+3
+A 5 10
+
+fork
+
+fork
+
+fork
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	1*		5
+	2		5
+	3		5
+	4		5
+
+d 0 asd.txt
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	2*		5
+	3		5
+	4		5
+
+S i
+
+The Processes using Disk 0:
+	1*	asd.txt
+
+exit
+
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	3*		5
+	4		5
+
+S i
+
+The Processes using Disk 0:
+	1*	asd.txt
+
+exit
+
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	4*		5
+
+d 1 qwer
+
+S r
+
+CPU and Ready-Queue are empty
+
+S m
+
+Memory:
+1	0	-	9	Capacity: 10
+-1000	10	-	29	Capacity: 20
+4	30	-	39	Capacity: 10
+-1000	40	-	99	Capacity: 60
+
+
+S i
+
+The Processes using Disk 0:
+	1*	asd.txt
+The Processes using Disk 1:
+	4*	qwer
+
+D 0
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	1*		5
+
+S i
+
+The Processes using Disk 1:
+	4*	qwer
+
+wait
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	1*		5
+
+wait
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	1*		5
+
+wait
+
+S r
+
+CPU and Ready-Queue are empty
+
+S i
+
+The Processes using Disk 1:
+	4*	qwer
+
+D 1
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	4*		5
+
+exit
+
+
+S m
+
+Memory:
+1	0	-	9	Capacity: 10
+-1000	10	-	99	Capacity: 90
+
+
+S r
+
+CPU (PID with * currently executing):
+Process P.I.D. 	 Process Priority
+	1*		5
+
+
