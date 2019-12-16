@@ -100,17 +100,20 @@ void OS::exit() {
         Terminate(curr_process.GetPid());
         // add zombie for curr_process parent_pid
         auto parent_itr = PCB_.find(curr_process.GetParentPid());
-        parent_itr->second.RemoveChild(curr_process.GetPid());
-        Process parent_process = parent_itr->second;
-        // check if parent was waiting, if yes, release parent
-        for (int i = 0; i < waiting_.size(); i++) {
-            if (waiting_[i].first == parent_process.GetPid()) {
-                if (parent_process.HasZombies()) {
-                    waiting_.erase(waiting_.begin() + i);
-                    AddToReady({parent_process.GetPid(), parent_process.GetPriority()});
+        if(parent_itr != PCB_.end()){
+            parent_itr->second.RemoveChild(curr_process.GetPid());
+            Process parent_process = parent_itr->second;
+            // check if parent was waiting, if yes, release parent
+            for (int i = 0; i < waiting_.size(); i++) {
+                if (waiting_[i].first == parent_process.GetPid()) {
+                    if (parent_process.HasZombies()) {
+                        waiting_.erase(waiting_.begin() + i);
+                        AddToReady({parent_process.GetPid(), parent_process.GetPriority()});
+                    }
                 }
             }
         }
+       
     }   
 }
 
